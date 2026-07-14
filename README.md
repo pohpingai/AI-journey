@@ -11,7 +11,7 @@ This repo is my public journal. Each folder is one project. The goal: look back 
 ### Project 1 — 🏎️ Pit Wall (July 2026)
 **FinOps for AI: cost visibility + model routing for an AI agent**
 
-One of my first build. A 4-step consumer-feedback agent for a fictional snack brand, with every AI call metered through a LiteLLM proxy ("the toll booth").
+A 4-step consumer-feedback agent for a fictional snack brand, with every AI call metered through a LiteLLM proxy ("the toll booth").
 
 Headline results:
 - Built a cost dashboard: cost per task, per step, per message
