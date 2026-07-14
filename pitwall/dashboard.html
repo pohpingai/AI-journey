@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pit Wall - AI Cost Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  body { font-family: -apple-system, Helvetica, Arial, sans-serif; background:#0f1220; color:#eef0f6; margin:0; padding:32px; }
+  h1 { margin:0 0 4px 0; } .sub { color:#9aa3b8; margin-bottom:28px; }
+  .cards { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:28px; }
+  .card { background:#1a1f33; border-radius:14px; padding:18px 24px; min-width:170px; }
+  .card .big { font-size:30px; font-weight:700; margin-top:6px; }
+  .card .label { color:#9aa3b8; font-size:13px; }
+  .panel { background:#1a1f33; border-radius:14px; padding:20px; margin-bottom:24px; }
+  .panel h2 { margin:0 0 14px 0; font-size:16px; color:#c9d1e3; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  td, th { padding:8px 10px; text-align:left; border-bottom:1px solid #2a3050; }
+  th { color:#9aa3b8; font-weight:600; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:900px){ .grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<h1>Pit Wall - AI Cost Dashboard</h1>
+<div class="sub">CrunchLab consumer feedback agent - baseline run (all steps on race-car / Sonnet)</div>
+
+<div class="cards">
+  <div class="card"><div class="label">Messages processed</div><div class="big">50</div></div>
+  <div class="card"><div class="label">AI calls</div><div class="big">200</div></div>
+  <div class="card"><div class="label">Total cost</div><div class="big">$0.1880</div></div>
+  <div class="card"><div class="label">Cost per message</div><div class="big">$0.0038</div></div>
+  <div class="card"><div class="label">Total tokens</div><div class="big">30,081</div></div>
+</div>
+
+<div class="grid">
+  <div class="panel">
+    <h2>Cost by step - where does the money go?</h2>
+    <canvas id="stepChart"></canvas>
+  </div>
+  <div class="panel">
+    <h2>Top 5 most expensive messages</h2>
+    <table>
+      <tr><th>Message ID</th><th>Cost</th></tr>
+      <tr><td>#45</td><td>$0.0059</td></tr><tr><td>#43</td><td>$0.0057</td></tr><tr><td>#23</td><td>$0.0055</td></tr><tr><td>#25</td><td>$0.0054</td></tr><tr><td>#44</td><td>$0.0054</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Cost per message (all 50)</h2>
+  <canvas id="msgChart" height="90"></canvas>
+</div>
+
+<script>
+new Chart(document.getElementById('stepChart'), {
+  type: 'bar',
+  data: {
+    labels: ['1-classify', '2-extract', '3-draft', '4-check'],
+    datasets: [{ label: 'Cost (USD)', data: [0.019539, 0.023724, 0.104841, 0.039915], backgroundColor: ['#4e79ff','#38c6a5','#f2b134','#e35d7c'] }]
+  },
+  options: { plugins:{legend:{display:false}}, scales:{ y:{ ticks:{color:'#9aa3b8'} }, x:{ ticks:{color:'#9aa3b8'} } } }
+});
+new Chart(document.getElementById('msgChart'), {
+  type: 'bar',
+  data: {
+    labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50'],
+    datasets: [{ label: 'Cost (USD)', data: [0.003348, 0.003372, 0.00324, 0.004671, 0.003258, 0.0033, 0.004119, 0.003366, 0.003216, 0.00318, 0.003066, 0.003192, 0.003174, 0.003198, 0.003336, 0.004281, 0.003612, 0.003066, 0.003354, 0.003348, 0.00489, 0.004308, 0.005514, 0.005331, 0.005433, 0.003414, 0.003084, 0.00297, 0.003579, 0.003486, 0.00372, 0.003306, 0.003198, 0.003522, 0.003108, 0.003246, 0.003372, 0.003342, 0.003348, 0.003492, 0.004188, 0.005052, 0.005694, 0.005397, 0.005901, 0.003414, 0.00297, 0.004683, 0.00306, 0.0033], backgroundColor: '#4e79ff' }]
+  },
+  options: { plugins:{legend:{display:false}}, scales:{ y:{ ticks:{color:'#9aa3b8'} }, x:{ ticks:{color:'#9aa3b8'} } } }
+});
+</script>
+</body>
+</html>
