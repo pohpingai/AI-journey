@@ -22,8 +22,19 @@ Headline results:
 
 Skills unlocked: Terminal basics, Python scripts (run, not write — yet!), APIs & API keys, LiteLLM proxy, token economics, model routing, basic evals.
 
-### Project 2 — coming soon
-Planned: connect the Toll Booth agent to a real feedback source (e.g. marketplace reviews) for a specific brand.
+### Project 2 — 🏁 Pit Wall MY (July 2026)
+**Post-race F1 analytics, refreshed automatically, for $0/month**
+
+A post-race analysis dashboard that turns raw session data into Drama Log, Heroes & Zeroes, Rejoin Strip, and Gap Trace views — live within 4 hours of the chequered flag, with zero manual steps and zero hosting cost.
+
+Headline results:
+- Fully automated refresh via scheduled GitHub Actions — no server, no manual publishing step
+- Runs end-to-end at **$0/month** (GitHub Actions + GitHub Pages)
+- Enforced an accuracy principle: every number is provable from the data; all interpretation is confined to a manually-written editor's take
+
+→ [See the project](./pit-wall-my/) · [Live dashboard](https://pohpingai.github.io/f1-dashboard/) · [Code repo](https://github.com/pohpingai/f1-dashboard)
+
+Skills unlocked: automating a recurring task end-to-end (GitHub Actions), sourcing and reconciling APIs, bug reporting and accuracy auditing before shipping.
 
 ---
 
