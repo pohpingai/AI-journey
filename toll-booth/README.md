@@ -1,10 +1,10 @@
-# 🏎️ Pit Wall — FinOps for an AI Agent
+# 🧾 Toll Booth — FinOps for an AI Agent
 
 **One-line summary:** I put a cost-metering proxy (LiteLLM) in front of a multi-step AI agent, measured cost per task and per step, then implemented one model-routing rule that cut total cost by **38.1%** while quality held at **96% approved**.
 
 Built by a zero-coding-background FMCG business partner, guided step-by-step by AI. Inspired by the "FinOps for AI" pillar in enterprise AI skill frameworks.
 
-![Pit Wall dashboard](dashboard_screenshot.png)
+![Toll Booth dashboard](dashboard_screenshot.png)
 
 ---
 
