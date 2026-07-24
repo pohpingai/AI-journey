@@ -18,12 +18,12 @@ Headline results:
 - One routing rule (cheap model for easy messages, premium for hard/safety ones) cut total cost by **38.1%**
 - Quality held at **96% approved** (measured by an AI quality-check step)
 
-→ [See the project](./pitwall/)
+→ [See the project](./toll-booth/)
 
 Skills unlocked: Terminal basics, Python scripts (run, not write — yet!), APIs & API keys, LiteLLM proxy, token economics, model routing, basic evals.
 
 ### Project 2 — coming soon
-Planned: connect the Pit Wall agent to a real feedback source (e.g. marketplace reviews) for a specific brand.
+Planned: connect the Toll Booth agent to a real feedback source (e.g. marketplace reviews) for a specific brand.
 
 ---
 
