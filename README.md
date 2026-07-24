@@ -8,7 +8,7 @@ This repo is my public journal. Each folder is one project. The goal: look back 
 
 ## 📅 Timeline
 
-### Project 1 — 🏎️ Pit Wall (July 2026 · built over a few evenings)
+### Project 1 — 🧾 Toll Booth (July 2026 · built over a few evenings)
 **FinOps for AI: cost visibility + model routing for an AI agent**
 
 A 4-step consumer-feedback agent for a fictional snack brand, with every AI call metered through a LiteLLM proxy ("the toll booth").
