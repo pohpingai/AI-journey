@@ -9,6 +9,8 @@ Built by a zero-coding-background FMCG business partner, guided step-by-step by 
 
 ---
 
+![Pit Wall MY dashboard](dashboard.png)
+
 ## What it does
 
 Every F1 session (practice, qualifying, race), Pit Wall MY pulls the session data and generates a post-race analysis — live on the dashboard about 4 hours after the chequered flag, with no manual step. A scheduled GitHub Actions workflow does the fetch, process, and publish; there's no server to run or pay for.
