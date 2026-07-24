@@ -6,40 +6,19 @@ This repo is my public journal. Each folder is one project. The goal: look back 
 
 ---
 
-## 📅 Timeline
+## 🧭 Why I'm doing this
 
-### Project 1 — 🧾 Toll Booth (July 2026 · built over a few evenings)
-**FinOps for AI: cost visibility + model routing for an AI agent**
-
-A 4-step consumer-feedback agent for a fictional snack brand, with every AI call metered through a LiteLLM proxy ("the toll booth").
-
-Headline results:
-- Built a cost dashboard: cost per task, per step, per message
-- One routing rule (cheap model for easy messages, premium for hard/safety ones) cut total cost by **38.1%**
-- Quality held at **96% approved** (measured by an AI quality-check step)
-
-→ [See the project](./toll-booth/)
-
-Skills unlocked: Terminal basics, Python scripts (run, not write — yet!), APIs & API keys, LiteLLM proxy, token economics, model routing, basic evals.
-
-### Project 2 — 🏁 Pit Wall MY (July 2026)
-**Post-race F1 analytics, refreshed automatically, for $0/month**
-
-A post-race analysis dashboard that turns raw session data into Drama Log, Heroes & Zeroes, Rejoin Strip, and Gap Trace views — live within 4 hours of the chequered flag, with zero manual steps and zero hosting cost.
-
-Headline results:
-- Fully automated refresh via scheduled GitHub Actions — no server, no manual publishing step
-- Runs end-to-end at **$0/month** (GitHub Actions + GitHub Pages)
-- Enforced an accuracy principle: every number is provable from the data; all interpretation is confined to a manually-written editor's take
-
-→ [See the project](./pit-wall-my/) · [Live dashboard](https://pohpingai.github.io/f1-dashboard/) · [Code repo](https://github.com/pohpingai/f1-dashboard)
-
-Skills unlocked: automating a recurring task end-to-end (GitHub Actions), sourcing and reconciling APIs, bug reporting and accuracy auditing before shipping.
+I want to understand how AI is actually built and used — not just as a user, but as someone who can reason about the tradeoffs: cost, quality, automation, what to trust and what to double-check. As a business partner with no coding background, this repo is where I build that understanding by shipping real, small projects with AI as my co-pilot.
 
 ---
 
-## 🧭 Why I'm doing this
+## 📅 Projects
 
-AI agents don't cost like software — their costs are variable and hard to predict. Enterprises are racing to get visibility and control over AI spend (FinOps for AI). As a business partner, I want to speak both languages: the business case *and* the mechanics underneath it.
+| # | Project | Date | One-liner |
+|---|---------|------|-----------|
+| 1 | [🧾 Toll Booth](./toll-booth) | July 2026 | FinOps for AI: cost-metering an agent and cutting spend 38% via model routing, quality held at 96% |
+| 2 | [🏁 Pit Wall MY](./pit-wall-my) | July 2026 | Automated post-race F1 analytics dashboard, refreshed via GitHub Actions at $0/month |
+
+---
 
 *Built with Claude as my guide. All code AI-assisted; all understanding hard-earned.* 😄
