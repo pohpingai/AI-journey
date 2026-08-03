@@ -2,11 +2,13 @@
 
 A simple three-scene AI-generated cartoon created as part of my journey learning to build with AI — starting from zero coding background.
 
+![My First AI Cartoon Video](thumbnail.png)
+
 ## ▶️ Watch the Video
 
-Click the image below to watch the finished animation.
+Here is my completed 15-second animation:
 
-[![Watch My First AI Cartoon Video](thumbnail.png)](https://raw.githubusercontent.com/pohpingai/AI-journey/main/ai-cartoon-video/girl%20and%20dog.mp4)
+<!-- DRAG THE VIDEO FILE DIRECTLY BELOW THIS LINE -->
 
 ## 🌟 About This Project
 
@@ -24,9 +26,9 @@ This was one of the more challenging projects in my AI journey because image gen
 
 I learned that **creating the character is the backbone of the project**. If the character is not right from the beginning, it becomes much harder to maintain consistency across the different scenes.
 
-Creating a good picture is only the first step. Adding natural movement, expression and personality to the character is another important skill.
+Creating a good picture is only the first step. Adding natural movement, expression and personality to the character requires another set of skills.
 
-I hope to learn how to create more character movements and make my future animations feel more natural and lively.
+In future projects, I hope to learn how to create more character movements and make my animations feel more natural and lively.
 
 ## 🛠️ Tool Used
 
@@ -37,6 +39,13 @@ I used **OpenArt** throughout this creative journey.
 **Idea → Character creation → Scene generation → Animation → Voice-over → Music → Final editing**
 
 This project reminded me that even a simple 15-second video can involve many small creative decisions, experiments and adjustments.
+
+## 🚀 What I Hope to Improve Next
+
+- Add a wider variety of character movements
+- Create more natural facial expressions
+- Improve consistency between scenes
+- Make the animation feel smoother and more lifelike
 
 ## 📂 Project Files
 
