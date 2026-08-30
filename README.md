@@ -19,7 +19,7 @@ I want to understand how AI is actually built and used — not just as a user, b
 | 1 | [🧾 Toll Booth](./toll-booth) | July 2026 | FinOps for AI: cost-metering an agent and cutting spend 38% via model routing, quality held at 96% |
 | 2 | [🏁 Pit Wall MY](./pit-wall-my) | July 2026 | Automated post-race F1 analytics dashboard, refreshed via GitHub Actions at $0/month |
 | 3 | [🎬 AI Cartoon Video](./ai-cartoon-video/) | August 2026 | Created a 15-second AI cartoon using character generation, animation, voice-over and music |
-
+| 4 | 🎯 [Course Fit Checker](./course-fit-checker) | August 2026 | 2 versions tested, 1 silent failure caught — a blunt sub-agent that vets a course against my budget and skill level |
 ---
 
 *Built with Claude as my guide. All code AI-assisted; all understanding hard-earned.* 😄
